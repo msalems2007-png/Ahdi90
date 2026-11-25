@@ -104,8 +104,7 @@ class WhatsAppAgentService : NotificationListenerService() {
         }
 
         val bodyText = if (reason.isNotBlank()) {
-            "$message
-(السبب: $reason)"
+            "$message\n(السبب: $reason)"
         } else {
             message
         }
